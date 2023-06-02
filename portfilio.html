@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function updateDateTime() {
+      var currentDate = new Date();
+      var dateElement = document.getElementById("date");
+      var timeElement = document.getElementById("time");
+
+
+      // Format the date
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+      var formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+      // Format the time
+      var formattedTime = currentDate.toLocaleTimeString();
+
+      // Update the HTML elements
+      dateElement.innerHTML = formattedDate;
+      timeElement.innerHTML = formattedTime;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+  </script>
+  <style>
+    .icon-bar {
+       
+  width: 1200px; /* Full-width */
+  height: 90px;
+  overflow: auto; /* Overflow due to float */
+ }
+
+.icon-bar a {
+ 
+ float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 10%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 10px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: black; /* White text color */
+  font-size: 36px; /* Increased font size */
+  position: relative;
+  left: 600px;
+  
+}
+
+.icon-bar a:hover {
+  background-color: black; 
+}
+  
+
+header{
+  background-color: white;
+}
+   input{
+       width: 200px;
+       height: 20px;
+       position: relative;
+       left: 620px;
+       font-size: 10px;
+       border-color: black;
+       border-radius: 20px;
+       font-family: fontawesome;
+       
+    }
+  *{
+    padding: 0;
+    margin: 0;
+    font-family:'josefin sans' sans-serif;
+    box-sizing: border-box;
+    
+  }
+
+  .About{
+    width: 100%px;
+    padding: 78px,0px;
+    background-color: black;
+  }
+  .About img{
+    height: auto;
+    width: 420px;
+     border: 2px solid whitesmoke;
+  padding: 2px;
+  margin: 2px;
+  
+  }
+  .About text{
+    width: 550px;
+  }
+  .main{
+    width: 1130px;
+    max-width: 95%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  span{
+    color: red;
+  }
+
+  .gmap_canvas{
+    position: relative;
+    left: 400px;
+  }
+  button{
+    background-color: red;
+    color: white;
+  }
+  .footer{
+
+    background-color: darkblue;
+   
+</style>
+</head>
+   
+<header>
+
+  <img style="background-repeat: no-repeat; background-size: cover; right:20px; height: 100px; top: ;" src="C:\Users\Alu PoPo\OneDrive\Desktop\portfilio\Your_Choice-removebg-preview (3).png">
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  
+  <a href="#"><i class="fa fa-phone"></i></a>
+  <a href="#"><i class="fa fa-bell" style="color: black;"></i></a>
+  <form action="https://www.google.com/" method="GET">
+  <input type="text" placeholder="&#xf002; serch any"name="q"></form>
+  
+</div>
+</header>
+<body >
+ <section class="About">
+  <div class="main">
+
+   <img src="C:\Users\Alu PoPo\OneDrive\Desktop\portfilio\223297150_565745961267752_4918524084707370369_n-removebg-preview.png">
+
+   
+
+   <div class="text">
+    <hr><h1 style="color:white; font-size: 95px;
+    margin-bottom: 20px;">About Us</h1>
+    <h5 style="color:white; font-size:75px; margin-bottom: 20px; letter-spacing: 2px;">Writer<span>& Developer</span> </h5>
+    <p style="color: purple;font-size: 18px; margin-bottom: 45px;">Name: Karma Yangden.<br>
+      Gender: <mark>Transman.</mark><br><br>
+      "I am determined to be cheerful and happy in whatever situation I may find myself. ..."<br><br>
+      I'm a designer and a writer.I can give you any type of contetent of design you wish to have. As I got 5 years of expernice in writing and I'm processing my course on Web Developer in Yonphula Cenetry College.<br>
+    About website I can make reseponsive website, as I'm good in HTML and CSS with a little knowledge of JavaScript.
+    even I can make a simple game using above three language.<br> 
+    Even I have got a experenice as Accountant  / bar Tender.<br> </p>
+    <button type="button">Let's Talk</button>
+
+    
+
+    <div class="mapouter">
+      
+
+  <h4 style="color:white;position: relative;
+    left: 400px; ">We are located at:-</h4>
+    
+  <div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=yonphula centenary college&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="padding: 20px;"></iframe>
+    <p style="color: white;">Date: <span id="date"></span></p>
+     <p style="color: white;">Time:<span id="time"></span></p>
+</div>
+ </div>
+</div>
+</section>
+ 
+
+
+<img src="C:\Users\Alu PoPo\OneDrive\Desktop\portfilio\customer-service-quote-laura-ashley-3.webp">
+<h5 style="color:white;">“Your most unhappy customers are your greatest source of learning.” – Bill Gates.</h5>
+
+</body>
+<footer>
+  <center><div class="footer">
+     <p> 
+    © 2023-2028 License, always for you</p>
+     <a href="#"><i class="fa fa-phone" style="color:black;"> 17276684</i></a><br>
+     <a href="#"><i class="fa fa-envelope" style="color: #0f0f10;">caspercullen55@gmail.com</i></a>
+     
+</div></center>
+</footer>
+</html>
